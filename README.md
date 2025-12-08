@@ -49,7 +49,3 @@ All design, logic, and interface ideas were developed by the author, with AI too
 
 ---
 
-## Usage
-1. Clone the repository:  
-   ```bash
-   git clone <repository-url>
