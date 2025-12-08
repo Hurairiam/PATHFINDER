@@ -1,6 +1,5 @@
 # PATHFINDER – Advanced Graph Pathfinding System
-
-**Description:**  
+ 
 This repository contains multiple iterations of **PATHFINDER**, an advanced C-based graph pathfinding system developed as an open-ended lab project for the **CSE 1302: Data Structures Lab** course (Fall 2025, Section 02) at the University of Liberal Arts Bangladesh (ULAB). PATHFINDER demonstrates practical applications of graph data structures, dynamic node and edge management, and pathfinding algorithms. The repository includes all C source files for versions 1 through 6 of the project and showcases the evolution from static, hardcoded graphs to fully dynamic, user-editable city networks with human-readable navigation instructions.
 
 ---
