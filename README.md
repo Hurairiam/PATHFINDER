@@ -1,15 +1,105 @@
 PATHFINDER – Advanced Graph Pathfinding System
 
-PATHFINDER is a console-based navigation system developed in C, designed to create, modify, visualize, and traverse networks of city blocks. Each block is represented as a node, and streets or paths between blocks act as edges. The system supports weighted and unweighted graphs, bidirectional and unidirectional paths, and provides human-readable navigation outputs including street names and distances. Version 6.0 represents the most advanced iteration, offering full dynamic graph management, step-by-step navigation reconstruction, and an intuitive menu-driven interface.
+Description:
+This repository contains multiple iterations of PATHFINDER, an advanced C-based graph pathfinding system developed as an open-ended lab project for the CSE 1302: Data Structures Lab course (Fall 2025, Section 02) at the University of Liberal Arts Bangladesh (ULAB). PATHFINDER demonstrates practical applications of graph data structures, dynamic node and edge management, and pathfinding algorithms such as BFS (for unweighted graphs) and Dijkstra (for weighted graphs). The repository includes all C source files for versions 1 through 6 of the project and showcases the evolution from static, hardcoded graphs to fully dynamic, user-editable city networks with human-readable navigation instructions.
 
-The project demonstrates practical application of core data structures and graph algorithms. Nodes and edges are stored in structured arrays combined with an adjacency matrix, allowing O(1) edge lookup while supporting dynamic insertion and deletion. Alternative structures such as linked lists and adjacency lists were considered, but the adjacency matrix was chosen for its simplicity, speed, and suitability for implementing BFS and Dijkstra’s algorithms efficiently. This approach ensures flexible handling of moderate-sized city networks while maintaining optimal pathfinding performance.
+Table of Contents
 
-For pathfinding, PATHFINDER employs Breadth-First Search (BFS) for unweighted graphs to guarantee the shortest route in terms of the number of edges, and Dijkstra’s Algorithm for weighted graphs to ensure minimum-cost paths. The parent array in both algorithms allows for step-by-step reconstruction of human-readable navigation paths. Key code segments include graph initialization, dynamic node and edge management, BFS/Dijkstra setup, and ASCII-based visualization for verifying connectivity. While visualization was not required by lab instructions, it provides a convenient way to check graph structure and correctness of paths.
+Project Overview
 
-PATHFINDER has evolved through multiple iterations, starting with hardcoded examples for a 3×3 grid in early versions, progressing through partially dynamic versions, and culminating in version 6.0, which supports fully dynamic graphs, weighted paths, and a menu-driven user interface. ASCII visualization, though limited for very large or highly complex networks, helps users quickly verify node connections and path correctness. The combination of BFS and Dijkstra ensures a balance between reliability, optimality, and usability, making PATHFINDER suitable for both small-scale and moderately complex city networks. Future improvements could include a graphical user interface (GUI) or interactive visualization to better handle larger graphs and enhance user comprehension.
+Features
 
-Development leveraged modern tools and techniques effectively. Code::Blocks IDE was used for writing, compiling, and testing C code. Initial hardcoded examples were written manually, while later dynamic iterations were generated with assistance from ViveCoding. AI tools, such as ChatGPT, were used to clarify ideas and explore alternative approaches, while Deepseek helped refine the final dynamic code. The menu-driven interface, including automatic screen clearing after each selection, was entirely designed by us to ensure smooth and intuitive interaction.
+Data Structures
 
-PATHFINDER (6.0) demonstrates thorough understanding and application of data structures, graph algorithms, and software design principles. It goes beyond the basic lab requirements by providing dynamic graph management, optimal pathfinding, human-readable navigation, and convenient ASCII visualization. The project showcases a professional, scalable, and user-friendly solution for real-world graph traversal and navigation problems, reflecting mastery of the course objectives.
+Algorithms
 
-If you want, I can also create a short “Features & Iterations” paragraph to add near the top so that GitHub readers immediately see the versions and main capabilities of PATHFINDER. This makes the README more engaging. Do you want me to do that?
+Implementation
+
+Usage
+
+Future Improvements
+
+References
+
+Project Overview
+
+PATHFINDER is designed to simulate a city-like graph where nodes represent blocks or waypoints and edges represent streets or paths connecting them. The system supports:
+
+Dynamic addition and removal of nodes and edges.
+
+Both weighted and unweighted modes.
+
+Bidirectional and unidirectional edges.
+
+Step-by-step human-readable navigation instructions.
+
+ASCII-based visualization for user convenience.
+
+The project evolves across six iterations, from a basic 3×3 hardcoded grid to a fully dynamic, scalable navigation system.
+
+Features
+
+Dynamic Graph Management: Add, delete, and modify nodes and edges at runtime.
+
+Optimal Pathfinding: BFS for shortest paths (unweighted) and Dijkstra for minimum-cost paths (weighted).
+
+Human-Readable Navigation: Stores street names and distances for step-by-step guidance.
+
+ASCII Visualization: Provides a quick text-based overview of the graph for verification.
+
+Menu-Driven Interface: Fully designed to close menus after each selection for smooth user experience.
+
+Data Structures
+
+Node: Represents a city block or waypoint. Contains name and active status.
+
+Edge: Represents a connection between nodes. Contains source, destination, weight, bidirectional flag, and unit.
+
+Graph: Contains arrays of nodes and edges, adjacency matrix for weights, adjacency path for street names, and metadata such as node count, edge count, and weighted/unweighted mode.
+
+Justification:
+Adjacency matrices were chosen for simplicity, O(1) edge lookup, and ease of BFS/Dijkstra implementation, while Node and Edge arrays support dynamic insertion and deletion.
+
+Algorithms
+
+Breadth-First Search (BFS) – For unweighted graphs. Guarantees the shortest path in terms of number of edges.
+
+Dijkstra’s Algorithm – For weighted graphs. Ensures minimum-cost paths for any positive edge weights.
+
+Both algorithms utilize a parent array for reconstructing human-readable paths.
+
+Implementation
+
+All versions are implemented in C.
+
+Key functionality includes graph initialization, node/edge management, pathfinding setup, and ASCII visualization.
+
+Screenshots of execution can be found in the Input/Output Screenshots
+ section of the repository.
+
+Usage
+
+Clone the repository:
+
+git clone <repository-url>
+
+
+Open the .c files in your preferred C IDE (Code::Blocks recommended).
+
+Compile and run to explore dynamic graph pathfinding and visualization.
+
+Future Improvements
+
+GUI or interactive visualization to handle larger graphs.
+
+Incorporation of heuristic-based algorithms for faster navigation in spatial graphs.
+
+Enhanced user interaction and error handling.
+
+References
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C., Introduction to Algorithms, 3rd Edition, MIT Press, 2009.
+
+Weiss, M. A., Data Structures and Algorithm Analysis in C, 4th Edition, Pearson, 2013.
+
+Lab manual, CSE 1302: Data Structures Lab, University of Liberal Arts Bangladesh, Fall 2025.
