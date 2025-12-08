@@ -5,19 +5,6 @@ This repository contains multiple iterations of **PATHFINDER**, an advanced C-ba
 
 ---
 
-## Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Features](#features)  
-3. [Data Structures](#data-structures)  
-4. [Algorithms](#algorithms)  
-5. [Implementation](#implementation)  
-6. [Usage](#usage)  
-7. [Future Improvements](#future-improvements)  
-8. [Version History](#version-history)  
-9. [References](#references)  
-
----
-
 ## Project Overview
 PATHFINDER simulates a city-like graph where nodes represent blocks or waypoints and edges represent streets or paths connecting them. Users can dynamically add, remove, and modify nodes and edges. Both weighted and unweighted paths are supported, including bidirectional and unidirectional connections. The system also provides human-readable navigation instructions and optional ASCII-based visualization for verification.
 
@@ -67,40 +54,3 @@ All design, logic, and interface ideas were developed by the author, with AI too
 1. Clone the repository:  
    ```bash
    git clone <repository-url>
-Open the project in any C IDE (Code::Blocks recommended).
-
-Compile and run the main C file.
-
-Follow the menu to add nodes, edges, and perform pathfinding operations.
-
-Future Improvements
-Add a graphical user interface (GUI) to enhance visualization of large or complex graphs.
-
-Integrate interactive controls for dynamic exploration of the network.
-
-Implement heuristic-based algorithms for faster performance on spatially distributed networks.
-
-Version History
-v1–v3: Static or hardcoded graph examples.
-
-v4: Partial dynamic implementation with user input for nodes.
-
-v5: Full dynamic graph with weighted/unweighted edges.
-
-v6: Complete system with bidirectional/unidirectional edges, menu interface, ASCII visualization, and robust pathfinding.
-
-References
-Mark Allen Weiss, Data Structures and Algorithm Analysis in C, 4th Edition, Pearson, 2014.
-
-Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein, Introduction to Algorithms, 3rd Edition, MIT Press, 2009.
-
-ULAB CSE-1302 Lab Manual, Fall 2025.
-
-Online resources for graph traversal algorithms and adjacency matrix representations.
-
-pgsql
-Copy code
-
-I can also create a **version with collapsible sections and better visual Markdown formatting for GitHub** so it looks very professional.  
-
-Do you want me to do that next?
